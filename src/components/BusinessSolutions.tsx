@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { SectionHeading } from "@/components/SectionHeading";
 import { BUSINESS_AUDIENCES, BUSINESS_HIGHLIGHTS } from "@/data/services";
