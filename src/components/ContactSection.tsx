@@ -252,8 +252,7 @@ export function ContactSection() {
                       </a>
                     ) : (
                       <p className="text-sm text-slate-400">
-                        Placeholder — number to be added in{" "}
-                        <code className="rounded bg-white/10 px-1 py-0.5 text-xs">src/data/company.ts</code>
+                        Our WhatsApp number will be published here shortly.
                       </p>
                     )}
                   </div>
