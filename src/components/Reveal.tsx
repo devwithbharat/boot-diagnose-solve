@@ -11,9 +11,9 @@ export function Reveal({
   delay = 0,
 }: {
   children: ReactNode;
-  className?: string;
+  className?: string | undefined;
   /** Stagger delay in milliseconds. */
-  delay?: number;
+  delay?: number | undefined;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import { useForm, type Resolver } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import {
@@ -54,12 +54,11 @@ export function ContactSection() {
     reset,
     formState: { errors },
   } = useForm<InquiryForm>({
-    resolver: zodResolver(inquirySchema),
+    resolver: zodResolver(inquirySchema) as Resolver<InquiryForm>,
     defaultValues: {
       fullName: "",
       email: "",
       phone: "",
-      inquiryType: undefined,
       requirement: "",
       message: "",
     },
@@ -306,8 +305,8 @@ function Field({
   children,
 }: {
   label: string;
-  hint?: string;
-  error?: string;
+  hint?: string | undefined;
+  error?: string | undefined;
   htmlFor: string;
   children: React.ReactNode;
 }) {
