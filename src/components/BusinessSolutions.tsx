@@ -45,16 +45,8 @@ export function BusinessSolutions() {
                   key={audience.title}
                   className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur transition-colors hover:bg-white/10"
                 >
-                  <span
-                    className={
-                      "flex size-11 shrink-0 items-center justify-center rounded-xl text-white " +
-                      (i % 2 === 0
-                        ? "bg-gradient-to-br from-electric to-cyan"
-                        : "bg-white/10 text-cyan")
-                    }
-                  >
-                    <Building2 className={i % 2 === 0 ? "size-5" : "hidden"} strokeWidth={2} />
-                    {i % 2 !== 0 && <audience.icon className="size-5" strokeWidth={2} />}
+                  <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-electric to-cyan text-white">
+                    <audience.icon className="size-5" strokeWidth={2} />
                   </span>
                   <p className="text-sm font-semibold text-white">{audience.title}</p>
                 </div>
